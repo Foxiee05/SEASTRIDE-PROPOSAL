@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-game: 'Luckiest Guy', cursive;
+    --font-pirate: 'Pirata One', cursive;
+    --font-cinzel: 'Cinzel', serif;
+    --font-serif-body: 'Crimson Pro', serif;
+    --font-heading: 'Fredoka', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #1a0f0a;
+    color: #f4e4bc;
+    background-image: radial-gradient(circle at 50% 30%, #2d1e15 0%, #1a0f0a 100%);
+    min-height: 100vh;
+  }
+}
+
+.font-game {
+  font-family: var(--font-game);
+  letter-spacing: 0.05em;
+}
+
+.font-pirate {
+  font-family: var(--font-pirate);
+  letter-spacing: 0.04em;
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-serif-body {
+  font-family: var(--font-serif-body);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* ==========================================================================
+   IMMERSIVE UI: TACTILE 3D BUTTONS & CONTROLS
+   ========================================================================== */
+
+.game-btn-gold {
+  background-color: #facc15;
+  color: #1a0f0a;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  border-bottom: 4px solid #a16207;
+  border-top: 1px solid #fef08a;
+  border-left: 1px solid #eab308;
+  border-right: 1px solid #ca8a04;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.game-btn-gold:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.game-btn-gold:active {
+  border-bottom-width: 0px;
+  transform: translateY(3px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.game-btn-wood {
+  background-color: #5c4033;
+  color: #f4e4bc;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3d2b1f;
+  border-top: 1px solid #7d5846;
+  border-left: 1px solid #4a3328;
+  border-right: 1px solid #4a3328;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease-in-out;
+}
+
+.game-btn-wood:hover {
+  color: #ffffff;
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.game-btn-wood:active {
+  border-bottom-width: 0px;
+  transform: translateY(3px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.game-btn-red {
+  background-color: #b91c1c;
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  border-bottom: 4px solid #7f1d1d;
+  border-top: 1px solid #f87171;
+  border-left: 1px solid #dc2626;
+  border-right: 1px solid #991b1b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.game-btn-red:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.game-btn-red:active {
+  border-bottom-width: 0px;
+  transform: translateY(3px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.game-btn-cyan {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 4px solid #075985;
+  border-top: 1px solid #38bdf8;
+  border-left: 1px solid #0369a1;
+  border-right: 1px solid #0369a1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.game-btn-cyan:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.game-btn-cyan:active {
+  border-bottom-width: 0px;
+  transform: translateY(3px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================================
+   IMMERSIVE UI: WOOD PANELS & TIMBER FRAMES
+   ========================================================================== */
+
+.wood-panel {
+  background-color: #241711;
+  border: 4px solid #3d2b1f;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.6);
+  border-radius: 0.75rem;
+  color: #f4e4bc;
+}
+
+.wood-panel-inner {
+  background-color: #1a0f0a;
+  border: 2px solid #3d2b1f;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+}
+
+/* ==========================================================================
+   IMMERSIVE UI: AGED PARCHMENT PAPER
+   ========================================================================== */
+
+.parchment-card {
+  background-color: #e8d5b5;
+  color: #2d1e15;
+  border: 2px solid #c2a67e;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 0.25rem;
+}
+
+/* ==========================================================================
+   IMMERSIVE UI: SPECIALTY STAT MODULES
+   ========================================================================== */
+
+.stat-card-hull {
+  background-color: #1a2b3c;
+  border: 4px solid #2d4a6b;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.stat-card-firepower {
+  background-color: #4a1d1d;
+  border: 4px solid #7a2f2f;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.stat-card-resources {
+  background-color: #122e23;
+  border: 4px solid #1f5c44;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   IMMERSIVE UI: MANIFEST TABLES
+   ========================================================================== */
+
+.manifest-table thead {
+  background-color: #3d2b1f;
+  color: #facc15;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.manifest-table th, 
+.manifest-table td {
+  border-color: #3d2b1f;
+}
+
+.manifest-table tbody tr:nth-child(even) {
+  background-color: rgba(45, 30, 21, 0.6);
+}
+
+.manifest-table tbody tr:nth-child(odd) {
+  background-color: rgba(26, 15, 10, 0.8);
+}
+
+/* ==========================================================================
+   ANIMATIONS & PARTICLES
+   ========================================================================== */
+
+@keyframes shipBob {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+.animate-ship-bob {
+  animation: shipBob 4s ease-in-out infinite;
+}
+
+/* Noise overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a0f0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c4033;
+  border-radius: 4px;
+  border: 2px solid #3d2b1f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #854d0e;
+}

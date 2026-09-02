@@ -1,0 +1,6 @@
+{
+  "name": "SeaStride Proposal",
+  "description": "Official SeaStride Proposal Document: Complete verbatim text, user journey table, technical specifications, and academic references for the gamified fitness RPG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
